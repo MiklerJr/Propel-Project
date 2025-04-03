@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propel DIRECTORY</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <!-- header -->
+    <div class="header-grid">
+        <!-- header left-->
+        <div class="header-grid-left">
+            <img class="icono-propel" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAMFBMVEVHcEz/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTsIxS4xAAAAD3RSTlMAxu4PHpyLU92vL0JicGvNJCYxAAAAsElEQVQokXXSVw6AMAgAUMBOF/e/rdIlVuTHxJeWVYAe0SMxE/oIU7jMKrLT5nkKP2ih2e7rl2ZfkqhqnJNAsWDbTuFG2+LJDHCYtsmZA9CyFXLJapXjwMmHrJR3E/W+L0r7G9sn09N6mrFY6yBMWMbS/61vzHpH+B5QXZQbDWkMdUttLPE12rNabYN30NifDrViNG7NTpXgKRt6RtzHAxqVWVFssU2Qfkgw/Rok/LcLQDsbdoyhiaMAAAAASUVORK5CYII=" alt="">
+            <p class="titulo">Propel DIRECTORY<p>
+        </div>
+        <!-- header-right -->
+        <div class="header-grid-right">
+            <div class="nav-container">
+                <nav>
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="org-page.html">Profile</a>
+                    <a class="nav-link" href="">Explore Data</a>
+                </nav>
+            </div>
+            <!-- perfil-->
+            <div class="perfil-container">            
+                <i id="profile-icon" class="fa-solid fa-user"></i>         
+            </div>  
+        </div> 
+    </div>  
+  </header>
+  <main>
+    <div class="main-container">
+        <div class="grid-org">
+            <div class="grid-org-top">
+                <div class="grid-org-top-left">
+                    <!-- aca va la foto -->
+                    <img class="icono-org-2">  
+                </div>
+                <div class="grid-org-top-right">
+                    <div class="grid-org-top-right-top">
+                        <div class="grid-org-top-right-top-1">
+                            <!-- Nombre -->
+                             <p class="org-name-2"></p> 
+                        </div>
+                        <div class="grid-org-top-right-top-2">
+                            <i id="web-icon" class="fa-solid fa-globe"></i>
+                            <i id="linkedin-icon" class="fa-brands fa-linkedin"></i>          
+                        </div>
+                        <div class="grid-org-top-right-top-3">
+                            <button class="donate-button">
+                                <p>Donate</p>
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </button>
+                        </div >
+                    </div>
+                    <div class="grid-org-top-right-bottom">
+                        <!-- aca va la descripcion -->
+                        <p class="org-desc-2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-org-bottom"> 
+                <div class="org-overview">
+                    <div class="info-tittle">NGO Overview</div>
+                    <div class="org-overview-info">
+                        <div class="overview-row">
+                            <p class="label">Country:</p>
+                            <p id="ov-country" class="info"></p>
+                        </div>
+                        <div class="overview-row">
+                            <p class="label">Year Founded:</p>
+                            <p id="ov-yearf" class="info"></p>
+                        </div>
+                        <div class="overview-row">
+                            <p class="label">Org Size:</p>
+                            <p class="info" id="ov-orgsize"></p>
+                        </div>
+                        <div class="overview-row">
+                            <p class="label">Social cause:</p>
+                            <p class="info" id="ov-socialc"></p>
+                        </div>
+                        <div class="overview-row">
+                            <p class="label">Programs offered:</p>
+                            <p class="info" id="ov-progoff"></p>
+                        </div>
+                        <div class="overview-row">
+                            <p class="label">Population served:</p>
+                            <p class="info" id="ov-popserved"></p>
+                        </div>
+                        <div class="overview-row">
+                            <p class="label">Propel training:</p>
+                            <p class="info" id="ov-training"></p>
+                        </div>
+                        <div class="overview-row">
+                            <p class="label">ODS:</p>
+                            <!-- aca tienen que ser imagenes - cambiar xD-->
+                            <div class="ods-grid" id="pic-ods-grid">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="org-summary">
+                    <div class="info-tittle">Impact Summary</div>
+                    <div class="org-summary-info">
+                        <div  class="summary-row">
+                            <p class="label">Beneficiaries:</p>
+                            <div class="info" id="su-benef"></div>
+                        </div>
+                        <div  class="summary-row">
+                            <p class="label">Impact Report:</p>
+                            <div class="info" id="su-imprep"></div>
+                        </div>
+                        <div>
+                            <p class="label">Digitalizacion Level:</p>
+                        </div>
+                        <div class="summary-row">
+                            <p class="label">Communication Style</p>
+                            <div class="div-scores">
+                                <div class="box" id="b1-1"></div>
+                                <div class="box" id="b1-2"></div>
+                                <div class="box" id="b1-3"></div>
+                            </div>
+                        </div>
+                        <div class="summary-row">
+                            <p class="label">Communication Personalization</p>
+                            <div class="div-scores">
+                                <div class="box" id="b2-1"></div>
+                                <div class="box" id="b2-2"></div>
+                                <div class="box" id="b2-3"></div>
+                            </div>
+                        </div>
+                        <div class="summary-row">
+                            <p class="label">Communication Channels</p>
+                            <div class="div-scores">
+                                <div class="box" id="b3-1"></div>
+                                <div class="box" id="b3-2"></div>
+                                <div class="box" id="b3-3"></div>
+
+                            </div>
+                        </div>
+                        <div class="summary-row">
+                            <p class="label">Data for Decision Making</p>
+                            <div class="div-scores">
+                                <div class="box" id="b4-1"></div>
+                                <div class="box" id="b4-2"></div>
+                                <div class="box" id="b4-3"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="leyenda-box">
+                                <div class="leyenda-row">
+                                    <div class="miniBox" style="background-color: rgb(255, 123, 0);"></div>
+                                    <p class="info">Beginner</p>
+                                </div>
+                                <div class="leyenda-row">
+                                    <div class="miniBox" style="background-color: rgb(19, 46, 19);"></div>
+                                    <p class="info">Intermediate</p>
+                                </div>
+                                <div class="leyenda-row">
+                                    <div class="miniBox" style="background-color: rgb(94, 139, 246);"></div>
+                                    <p class="info">Advanced</p>
+                                </div>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="org-financial">
+                    <div class="info-tittle">Financial</div>
+                    <div class="org-financial-info">
+                        <div class="financial-info-1">
+                            <!-- izquierda -->
+                            <div class="financial-info-1-left">
+                                <div class="financial-row">
+                                    <p class="label">Total revenue:</p>
+                                    <p class="info" id="fin-rev"></p> 
+                                </div>
+                                <div class="financial-row">
+                                    <p class="label">Total expenses:</p>
+                                    <p class="info" id="fin-exp"></p>
+                                </div>
+                            </div>
+                            <!-- derecha (botón)-->
+                            <div class="financial-info-1-right">
+                                <select class="boton-anho">
+                                    <option>2024</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="financial-info-2">
+                            <div class="chart-container">
+                                <canvas id="chart">
+                            
+                                </canvas>
+                            </div>
+                            
+
+                        </div>
+                        <div class="financial-info-3">
+                            <p class="label">Grants Awarded</p> <!-- borra aqui-->
+                            <p class="info" id="fin-grants"></p> <!-- borra aqui-->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+  </main>
+
+
+  <script src="data/organizations.js"></script>
+  <script src="profile.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</body>
+</html>

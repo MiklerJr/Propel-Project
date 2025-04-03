@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propel DIRECTORY</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <!-- header -->
+    <div class="header-grid">
+        <!-- header left-->
+        <div class="header-grid-left">
+            <img class="icono-propel" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAMFBMVEVHcEz/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTv/aTsIxS4xAAAAD3RSTlMAxu4PHpyLU92vL0JicGvNJCYxAAAAsElEQVQokXXSVw6AMAgAUMBOF/e/rdIlVuTHxJeWVYAe0SMxE/oIU7jMKrLT5nkKP2ih2e7rl2ZfkqhqnJNAsWDbTuFG2+LJDHCYtsmZA9CyFXLJapXjwMmHrJR3E/W+L0r7G9sn09N6mrFY6yBMWMbS/61vzHpH+B5QXZQbDWkMdUttLPE12rNabYN30NifDrViNG7NTpXgKRt6RtzHAxqVWVFssU2Qfkgw/Rok/LcLQDsbdoyhiaMAAAAASUVORK5CYII=" alt="">
+            <p class="titulo">Propel DIRECTORY<p>
+        </div>
+        <!-- header-right -->
+        <div class="header-grid-right">
+            <div class="nav-container">
+                <nav>
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="org-page.html">Profile</a>
+                    <a class="nav-link" href="">Explore Data</a>
+                </nav>
+            </div>
+            <!-- perfil-->
+            <div class="perfil-container">            
+                <i id="profile-icon" class="fa-solid fa-user"></i>         
+            </div>  
+        </div> 
+    </div>  
+  </header>
+
+  <main>
+    <div class="main-grid">
+        <div class="top-grid">
+            <p>Show me top performing organizations in 
+                <select id="country-filtre" class="filtro-select"></select>
+                in 
+                <select id="cause-filtre" class="filtro-select"></select>
+                that have participated in 
+                <select id="participated-filtre" class="filtro-select"></select>
+            </p>
+        </div>
+        <div class="bottom-grid">
+            <!-- por cada busqueda tenemos que agregar uno de estos cards-->
+        </div>
+
+    </div>
+
+    
+
+  </main>
+
+
+  <script src="data/organizations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
